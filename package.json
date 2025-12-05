@@ -1,0 +1,17 @@
+{
+  "name": "thu-thanh-vo-han",
+  "version": "1.0.0",
+  "description": "Game thủ thành vô hạn chạy trên trình duyệt",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [
+    "game",
+    "tower-defense",
+    "canvas",
+    "html5"
+  ],
+  "author": "Game Developer",
+  "license": "MIT"
+}
