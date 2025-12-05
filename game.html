@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Thẻ Meta cho SEO và chia sẻ mạng xã hội khi host trên Vercel -->
+    <meta name="description" content="Thủ Thành Vô Hạn - Game chiến thuật phòng thủ tháp hấp dẫn trên trình duyệt.">
+    <meta property="og:title" content="Thủ Thành Vô Hạn">
+    <meta property="og:description" content="Bảo vệ tường thành, triệu hồi tướng và chiến đấu chống lại quái vật vô tận!">
+    <meta property="og:type" content="website">
     <title>Thủ Thành Vô Hạn</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -380,15 +385,15 @@
         <p class="text-3xl mb-8">Bạn đã dừng bước tại Wave <span id="final-wave" class="text-white font-bold text-4xl">0</span></p>
         <p class="text-lg text-gray-400 mb-10"><i class="fas fa-save mr-2"></i>Bạc đã được lưu vào kho.</p>
         <div class="flex gap-8">
-            <!-- Removed "Chơi Lại" Button -->
-            <button onclick="resetGame(true)" class="px-10 py-4 bg-gray-800 text-white font-bold text-xl rounded-xl hover:bg-gray-700 border border-gray-600 shadow-xl transition hover:scale-105">Về Sảnh</button>
-        </div>
-    </div>
-</div>
-
-<script>
+    <script>
 /**
  * CONFIG & DATA
+ * LƯU Ý KHI HOST VERCEL: 
+ * Các link ảnh dưới đây (cdn.discordapp.com) có thể sẽ hết hạn sau một thời gian.
+ * Để game hoạt động ổn định lâu dài trên Vercel, bạn nên:
+ * 1. Tải các ảnh này về.
+ * 2. Tạo thư mục tên 'assets' hoặc 'images' cùng cấp với file index.html.
+ * 3. Đổi đường dẫn bên dưới thành đường dẫn tương đối (ví dụ: './assets/hero.png').
  */
 const CONFIG = {
     FPS: 60,
